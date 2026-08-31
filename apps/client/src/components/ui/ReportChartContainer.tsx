@@ -304,3 +304,5 @@ export const ReportChartContainer: React.FC<ReportChartContainerProps> = (props)
 // PR Merge #5 update
 
 // PR #5: Business Intelligence Chart Visualizer - Feature commit step
+
+// GitHub API PR #5 integration
