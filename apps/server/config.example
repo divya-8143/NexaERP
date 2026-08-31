@@ -1,0 +1,6 @@
+DATABASE_URL="file:./dev.db"
+JWT_SECRET="nexaerp_dev_secret_key_123"
+JWT_REFRESH_SECRET="nexaerp_dev_refresh_secret_key_123"
+PORT=3001
+NODE_ENV="development"
+CORS_ORIGIN="http://localhost:5173"
