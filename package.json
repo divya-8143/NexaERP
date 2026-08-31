@@ -1,0 +1,34 @@
+{
+  "name": "nexaerp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --parallel --filter @nexaerp/client --filter @nexaerp/server dev",
+    "build": "pnpm --filter @nexaerp/shared build && pnpm --filter @nexaerp/client build && pnpm --filter @nexaerp/server build",
+    "test": "pnpm --filter @nexaerp/server test",
+    "lint": "pnpm --filter @nexaerp/server lint",
+    "type-check": "pnpm --filter @nexaerp/server type-check",
+    "db:push": "pnpm --filter @nexaerp/server db:push",
+    "db:seed": "pnpm --filter @nexaerp/server db:seed"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma",
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "license": "UNLICENSED"
+}
