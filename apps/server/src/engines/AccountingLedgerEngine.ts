@@ -736,3 +736,5 @@ export class AccountingLedgerEngine {
 // PR Merge #4 update
 
 // PR #4: Financial General Ledger & Trial Balance - Feature commit step
+
+// GitHub API PR #4 integration
